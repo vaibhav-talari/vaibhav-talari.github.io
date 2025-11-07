@@ -7,14 +7,44 @@
 
 body {
   line-height: 1.6;
-  color: #333;
-  background: #f9f9f9;
+  color: hsl(0, 0%, 100%);
+  background: #000719;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 header {
-  background: #222;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
   padding: 1rem 2rem;
+  background-size: cover;
 }
 
 header nav {
@@ -36,13 +66,18 @@ header a {
 
 section {
   padding: 2rem;
-  max-width: 800px;
+  max-width: fit-content;
   margin: auto;
+ }
+
+h1 {
+  text-align: center;
+  color: #f3f6a4;
 }
 
 h2 {
   margin-bottom: 1rem;
-  color: #222;
+  color: #ffffff;
 }
 
 .project {
@@ -110,16 +145,17 @@ footer {
   /* modern way to add space between flex items */
 }
 
+#about,
 #experience,
 #projects,
 #education {
-  max-width: 900px;
+  max-width: fit-content;
   margin: 0 auto;
   padding: 2rem;
   font-family: Arial, sans-serif;
 }
 
-
+#about h2,
 #experience h2,
 #projects h2,
 #education h2 {
@@ -131,7 +167,7 @@ footer {
   flex: 0 0 100px;
   text-align: right;
   font-weight: bold;
-  color: #555;
+  color: #ffffff;
 }
 
 
@@ -139,12 +175,20 @@ footer {
   flex: 1;
 }
 
-
-.experience-block {
-  background: #f9f9f9;
+.project-block {
+  background: #181818;
   border-radius: 8px;
   padding: 1rem 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.7);
+  margin-top: 1.5rem; /* adds space before each block */
+}
+
+
+.experience-block {
+  background: #181818;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.7);
 }
 
 

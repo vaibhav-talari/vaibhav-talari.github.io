@@ -1,0 +1,6 @@
+{
+    "about": "Hi, I'm Vaibhav, a full stack developer passionate about building impactful digital products.",
+    "projectDatabase": "In this <a href=\"https://github.com/vaibhav-talari/java-db-explorer/\">project</a> I explored and applied Java persistence concepts using Hibernate and JPA, including automated entity generation, connection pooling with Hikari, and data operations via Jakarta Data Repositories.",
+    "containerTechnology": "In this <a href=\"https://github.com/vaibhav-talari/container-explorer\">project</a> I explored containerization concepts using Docker and Podman by deploying a FastAPI-React application with PostgreSQL, focusing on volumes, multi-stage builds, and network configurations.",
+    "javaFundamentals": "In this <a href=\"https://github.com/vaibhav-talari/java-fundamentals-explorer\">project</a> I explored core Java concepts such as multithreading, logic operators, and version-specific features from Java 17, 21, and 25."
+}

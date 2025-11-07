@@ -4,61 +4,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vaibhav Talari | Portfolio</title>
+  <title>Vaibhav | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <header>
+<body onload="typeWriter()">
+  <header class="headerGradiant">
     <nav>
-      <h1>Vaibhav Talari</h1>
+      <h1>Vaibhav</h1>
       <ul>
         <!-- in href # refers to same page section-->
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="counter.html">Tools</a></li>
+        <li>
+          <div class="dropdown">Play
+            <div class="dropdown-content">
+              <a href="counter.html">Counter</a>
+              <a href="dice.html">Dice</a>
+              <!-- <a href="#">Link 3</a> -->
+            </div>
+          </div>
+        </li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>Hi, I'm Vaibhav, a software developer passionate about building impactful digital products. I bring a
-      goal-oriented, analytical, and problem-solving mindset to complex technical challenges, with industry experience
-      in Java and Microservices development and extensive use of design patterns. I am proficient in multiple
-      programming languages, including Java, Python, C, Golang, and Bash, and skilled with technologies such as Spring,
-      Kubernetes, AWS (EC2, S3, Lambda, KMS), and Azure (Service Bus, Blob Storage). My experience extends to a wide
-      range of tools, including Spring Boot, Maven, Git, Docker, Flink, Kafka, MySQL, MongoDB, Postman, Jenkins, Splunk,
-      Kibana, Power BI, Power Apps, and Power Automate. Having collaborated in Agile teams that follow Scrum, I am now
-      seeking an opportunity to apply and expand my technical expertise in a dynamic and challenging environment.</p>
+    <h1>About Me</h1>
+    <h2 id="aboutContent"></h2>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
+    <h1>Projects</h1>
 
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-right">
-          <div class="experience-block">
-
-            <h3>Exploring JDBC, JPA and Jakarta Data API</h3>
-            <p>In <a href="https://github.com/vaibhav-talari/java-db-explorer/">java-db-explorer</a> the following is explored:</p>
-            <ul>
-              <li>Implemented object-relational mapping in Java to seamlessly connect application objects with database tables.</li>
-              <li>Generated entity classes automatically from existing database schemas using Hibernate tools.</li>
-              <li>Configured and explored Hikari connection pooling with JDBC and JPA implementations.</li>
-              <li>Explored JPA configuration for standardized persistence management using Hibernate as the JPA provider.</li>
-              <li>Developed data retrieval and manipulation operations using Jakarta Data Repositories.</li>
-            </ul>            
-          </div>
+        <div class="project-block">
+          <h1>Exploring JDBC, JPA and Jakarta Data API</h1>
+          <p id="java-database"></p>
+        </div>
+        <div class="project-block">
+          <h1>Exploring Container Technology</h1>
+          <p id="container-technology"></p>
+        </div>
+        <div class="project-block">
+          <h1>Exploring Java Fundamentals</h1>
+          <p id="java-fundamentals"></p>
         </div>
       </div>
     </div>
   </section>
 
   <section id="experience">
-    <h2>Experience</h2>
+    <h1>Experience</h1>
     <div class="timeline">
       <!-- thesis -->
       <div class="timeline-item">
@@ -226,7 +225,7 @@
   </section>
 
   <section id="education">
-    <h2>Education</h2>
+    <h1>Education</h1>
     <div class="timeline">
       <!-- chalmers -->
       <div class="timeline-item">
@@ -330,7 +329,7 @@
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h1>Contact</h1>
     <a href="https://www.linkedin.com/in/vaibhav-15-talari/" target="_blank">
       <img src="https://skillicons.dev/icons?i=linkedin" />
     </a>
@@ -339,6 +338,8 @@
       <img src="https://skillicons.dev/icons?i=github" />
     </a>
   </section>
+
+  <script src="/script.js"></script>
 </body>
 
 </html>
