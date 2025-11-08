@@ -9,19 +9,19 @@
 </head>
 
 <body onload="typeWriter()">
-  <header class="headerGradiant">
+  <header>
     <nav>
-      <h1>Vaibhav</h1>
+      <h1>Vaibhav | వైభవ్ | वैभव</h1>
       <ul>
         <!-- in href # refers to same page section-->
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li>
-          <div class="dropdown">Play
+          <div class="dropdown">
+            <a href="#">Play</a>
             <div class="dropdown-content">
               <a href="counter.html">Counter</a>
               <a href="dice.html">Dice</a>
-              <!-- <a href="#">Link 3</a> -->
             </div>
           </div>
         </li>
@@ -31,299 +31,233 @@
   </header>
 
   <section id="about">
-    <h1>About Me</h1>
+    <h1><u>About Me</u></h1>
     <h2 id="aboutContent"></h2>
   </section>
 
-  <section id="projects">
-    <h1>Projects</h1>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="project-block">
-          <h1>Exploring JDBC, JPA and Jakarta Data API</h1>
-          <p id="java-database"></p>
+  <section>
+    <h1><u>Projects</u></h1>
+    <div class="placecardproject">
+      <div class="orderplacement">
+        <h3><i>Exploring JDBC, JPA and Jakarta Data API</i></h3>
+        <p id="java-database"></p>
+        <div class="simple-links"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <a href="https://github.com/vaibhav-talari/container-explorer">repository</a>
+          <a href="https://vaibhav-talari.github.io/container-explorer/">blog</a>
         </div>
-        <div class="project-block">
-          <h1>Exploring Container Technology</h1>
-          <p id="container-technology"></p>
+      </div>
+      <div class="orderplacement">
+        <h3><i>Exploring Container Technology</i></h3>
+        <p id="container-technology"></p>
+        <div class="simple-links"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <a href="https://github.com/vaibhav-talari/container-explorer">repository</a>
+          <a href="#">blog</a>
         </div>
-        <div class="project-block">
-          <h1>Exploring Java Fundamentals</h1>
-          <p id="java-fundamentals"></p>
+      </div>
+      <div class="orderplacement">
+        <h3><i>Exploring Java Fundamentals</i></h3>
+        <p id="java-fundamentals"></p>
+        <div class="simple-links"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <a href="https://github.com/vaibhav-talari/java-fundamentals-explorer">repository</a>
+          <a href="#">blog</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="experience">
-    <h1>Experience</h1>
-    <div class="timeline">
+  <section>
+    <h1><u>Experience</u></h1>
+
+    <div class="placecardexperience">
+
       <!-- thesis -->
-      <div class="timeline-item">
-        <div class="timeline-left">January 2025 - August 2025</div>
-        <div class="timeline-right">
-          <div class="experience-block">
-            <h3>Thesis Worker - Göteborg Energi, Gothenburg, Sweden</h3>
-            <p>Conducting master's research on applying Complex Event Processing to smart meter data using Apache Flink
-              and Apache Kafka.</p>
+      <div class="orderplacementexperience">
+        <div class="simple-links"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <h3>Thesis Worker, Göteborg Energi, Gothenburg, Sweden</h3>
+          <h3>January 2025 - August 2025</h3>
+        </div>
 
-            <!-- collapsible details -->
-            <details>
-              <summary>Achievements</summary>
-              <ul>
-                <li>Conducted performance comparison between stream processing and complex event processing query
-                  implementations.</li>
-                <li>Developed Bash scripts to automate Flink job deployment, validate output results, and support the
-                  overall development process.</li>
-              </ul>
-            </details>
-
-            <!-- skills -->
-            <div class="skills">
-              <img
-                src="https://go-skill-icons.vercel.app/api/icons?i=java,flink,kafka,grafana,prometheus,bash,docker,maven,git,github,azuredevops,vscode,teams,outlook&titles=true" />
-            </div>
-          </div>
+        <p>Conducted master's research on applying Complex Event Processing to smart meter data using Apache Flink and
+          Apache Kafka.</p>
+        <!-- skills -->
+        <div class="skills">
+          <img
+            src="https://go-skill-icons.vercel.app/api/icons?i=java,flink,kafka,grafana,prometheus,bash,docker,maven,git,github,azuredevops,vscode,teams,outlook&titles=true" />
         </div>
       </div>
 
-
       <!-- ta -->
-      <div class="timeline-item">
-        <div class="timeline-left"> August 2024 - June 2025</div>
-        <div class="timeline-right">
-          <div class="experience-block">
-            <h3>Teaching Assistant, Chalmers University of Technology, Gothenburg, Sweden</h3>
-            <p>Served as Teaching Assistant for Operating Systems, Distributed Systems, Computer Security, and Network
-              Security.</p>
+      <div class="orderplacementexperience">
+        <div class="simple-links"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <h3>Teaching Assistant, Chalmers University of Technology, Gothenburg, Sweden</h3>
+          <h3>August 2024 - June 2025</h3>
+        </div>
 
-            <details>
-              <summary>Achievements</summary>
-              <ul>
-                <li>Graded lab submissions, supervised lab sessions, and assisted students with questions and
-                  demonstrations.</li>
-              </ul>
-            </details>
-
-            <div class="skills">
-              <img
-                src="https://go-skill-icons.vercel.app/api/icons?i=python,c,golang,bash,git,github,vscode,teams,outlook&titles=true" />
-            </div>
-          </div>
+        <p>Served as Teaching Assistant for Operating Systems, Distributed Systems, Computer Security, and Network
+          Security.</p>
+        <!-- skills -->
+        <div class="skills">
+          <img
+            src="https://go-skill-icons.vercel.app/api/icons?i=python,c,golang,bash,git,github,vscode,teams,outlook&titles=true" />
         </div>
       </div>
 
       <!-- summer worker -->
-      <div class="timeline-item">
-        <div class="timeline-left"> June 2024 - August 2024</div>
-        <div class="timeline-right">
-          <div class="experience-block">
-            <h3>Summer Worker, Volvo Group, Gothenburg, Sweden</h3>
-            <p>Developed solutions on Microsoft Power Platform using Dataverse, Power Apps, Power Automate and Power BI,
-              built a Python automation tool for the Accident Research Team, and created Confluence documentation.</p>
+      <div class="orderplacementexperience">
+        <div class="simple-links"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <h3>Summer Worker, Volvo Group, Gothenburg, Sweden</h3>
+          <h3>June 2024 - August 2024</h3>
+        </div>
 
-            <details>
-              <summary>Achievements</summary>
-              <ul>
-                <li>Developed a Python-based GUI tool to automate workflow processes using Selenium.</li>
-                <li>Developed a Microsoft Canvas App with Power Automate integration.</li>
-                <li>Created a Python script to merge and sanitize Excel files.</li>
-                <li>Imported the processed Excel file into Microsoft Dataverse using Power Query.</li>
-                <li>Designed and implemented a schema in Microsoft Dataverse, developed a Power Platform model-driven
-                  app, and built a Power BI dashboard.</li>
-                <li>Implemented a deployment workflow in Power Apps Solutions to streamline releases and improve
-                  deployment efficiency.</li>
-              </ul>
-            </details>
+        <p>Developed solutions on Microsoft Power Platform using Dataverse, Power Apps, Power Automate and Power
+          BI,
+          built a Python automation tool for the Accident Research Team, and created Confluence documentation.</p>
 
-            <div class="skills">
-              <img
-                src="https://go-skill-icons.vercel.app/api/icons?i=python,azure,excel,vscode,teams,outlook&titles=true" />
-            </div>
-          </div>
+        <div class="skills">
+          <img
+            src="https://go-skill-icons.vercel.app/api/icons?i=python,azure,excel,vscode,teams,outlook&titles=true" />
         </div>
       </div>
 
       <!-- intellect -->
-      <div class="timeline-item">
-        <div class="timeline-left"> August 2021 - July 2023</div>
-        <div class="timeline-right">
-          <div class="experience-block">
-            <h3>Product Engineer, Intellect Design Arena, Chennai, India</h3>
-            <p>Specialized in Java and Spring Boot with DevOps practices, implementing cloud-agnostic business logic,
-              managing 20+ microservices on Kubernetes clusters, working with AWS Lambda, S3, EC2, and handling
-              deployments with Jenkins.</p>
-
-            <details>
-              <summary>Achievements</summary>
-              <ul>
-                <li>Developed and documented a custom SDK for bulk file transfers, leveraging AWS Transfer Manager and
-                  Java design patterns.</li>
-                <li>Streamlined bulk uploads with AWS S3 and Lambda, integrating OPSWAT for asynchronous virus scans.
-                </li>
-                <li>Built REST APIs on top of HashiCorp Vault using Spring Boot for secure credential management.</li>
-                <li>Led the migration of Spring Boot microservices from 2.2.x to 2.7.x and addressed compatibility
-                  issues encountered during the process.</li>
-                <li>Implemented a parent-child dependency structure using Maven BOM for consistent dependency version
-                  control across microservices.</li>
-                <li>Developed Postman automation scripts to enhance API testing efficiency.</li>
-                <li>Identified and mitigated security vulnerabilities, including Log4Shell and CRLF injection.</li>
-                <li>Developed a PoC to assess application feasibility with Azure Service Bus and Blob Storage.</li>
-                <li>Addressed support tickets providing effective application support.</li>
-                <li>Collaborated with the infrastructure team to provision AWS services.</li>
-              </ul>
-            </details>
-
-            <div class="skills">
-              <img
-                src="https://go-skill-icons.vercel.app/api/icons?i=java,spring,springsecurity,kubernetes,docker,jax,bash,maven,keycloak,tomcat,git,github,gitlab,jenkins,postman,mysql,mongodb,jenkins,aws,s3,ec2,json,lambda,azure,datadog,elasticsearch,kibana,jira,&titles=true" />
-            </div>
-          </div>
+      <div class="orderplacementexperience">
+        <div class="simple-links"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <h3>Product Engineer, Intellect Design Arena, Chennai, India</h3>
+          <h3>August 2021 - July 2023</h3>
+        </div>
+        <p>Specialized in Java and Spring Boot with DevOps practices, implementing cloud-agnostic business logic,
+          managing 20+ microservices on Kubernetes clusters, working with AWS Lambda, S3, EC2, and handling
+          deployments with Jenkins.</p>
+        <div class="skills">
+          <img
+            src="https://go-skill-icons.vercel.app/api/icons?i=java,spring,springsecurity,kubernetes,docker,jax,bash,maven,keycloak,tomcat,git,github,gitlab,jenkins,postman,mysql,mongodb,jenkins,aws,s3,ec2,json,lambda,azure,datadog,elasticsearch,kibana,jira,&titles=true" />
         </div>
       </div>
 
       <!-- cognizant -->
-      <div class="timeline-item">
-        <div class="timeline-left"> July 2018 - August 2021</div>
-        <div class="timeline-right">
-          <div class="experience-block">
-            <h3>Software Developer, Cognizant, Bengaluru, India</h3>
-            <p>Trained as Full-Stack Developer contributing to AE Core, AE Core Integration, and AE Core UI projects by
-              building GxP-compliant Spring Boot microservices, integrating Salesforce API, collaborating with
-              cross-functional teams, managing deployments, resolving incidents, and working with AWS services.</p>
-
-            <details>
-              <summary>Achievements</summary>
-              <ul>
-                <li>Developed secure REST API endpoints in a Spring Boot microservice and integrated it with AWS SQS,
-                  S3, and KMS.</li>
-                <li>Implemented custom validations to prevent XSS and SQL injection and applied PGP encryption to secure
-                  JSON payloads.</li>
-                <li>Handled production monitoring, operations, and root cause analysis.</li>
-                <li>Created Splunk alerts and dashboards for real-time monitoring.</li>
-                <li>Developed API testing scripts using Newman and integrated them with Jenkins.</li>
-                <li>Ensured GDPR compliance by implementing a data deletion mechanism.</li>
-                <li>Integrated the Salesforce social media API to fetch data from social media platforms via REST API
-                  calls.</li>
-                <li>Utilized a time-based scheduler API to invoke AWS Lambda for processing messages in the AWS DLQ.
-                </li>
-                <li>Created a Jenkins pipeline script for automating deployment.</li>
-                <li>Containerized the application using Docker with a Tomcat runtime.</li>
-                <li>Migrated the UI application from manual deployment to AWS ECS.</li>
-              </ul>
-            </details>
-
-            <div class="skills">
-              <img
-                src="https://go-skill-icons.vercel.app/api/icons?i=java,spring,springsecurity,docker,jax,bash,maven,tomcat,git,gitlab,postman,mysql,jenkins,aws,s3,ec2,ecs,ecr,sqs,lambda,cloudformation,jira&titles=true" />
-            </div>
-          </div>
+      <div class="orderplacementexperience">
+        <div class="simple-links"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <h3>Software Developer, Cognizant, Bengaluru, India</h3>
+          <h3>July 2018 - August 2021</h3>
+        </div>
+        <p>Trained as Full-Stack Developer contributing to AE Core, AE Core Integration, and AE Core UI projects
+          by
+          building GxP-compliant Spring Boot microservices, integrating Salesforce API, collaborating with
+          cross-functional teams, managing deployments, resolving incidents, and working with AWS services.</p>
+        <div class="skills">
+          <img
+            src="https://go-skill-icons.vercel.app/api/icons?i=java,spring,springsecurity,docker,jax,bash,maven,tomcat,git,gitlab,postman,mysql,jenkins,aws,s3,ec2,ecs,ecr,sqs,lambda,cloudformation,jira&titles=true" />
         </div>
       </div>
+
     </div>
   </section>
 
-  <section id="education">
-    <h1>Education</h1>
-    <div class="timeline">
+  <section>
+    <h1><u>Education</u></h1>
+
+    <div class="placecardexperience edu">
+
       <!-- chalmers -->
-      <div class="timeline-item">
-        <div class="timeline-left">August 2023 - August 2025</div>
-        <div class="timeline-right">
-          <div class="experience-block">
-            <h3>Master of Science in Computer Systems and Networks - Chalmers University of Technology, Gothenburg,
-              Sweden
-            </h3>
-            <!-- Collapsible Courses -->
-            <details>
-              <summary>Courses Taken</summary>
-              <ul>
-                <li>Operating systems</li>
-                <li>Computer networks</li>
-                <li>Distributed systems</li>
-                <li>Cryptography</li>
-                <li>Computer security</li>
-                <li>Real time systems</li>
-                <li>Language-based security</li>
-                <li>Network security</li>
-                <li>Data-driven support for cyber-physical systems</li>
-                <li>Technical writing in Computer Systems and Networks</li>
-                <li>Introduction to data science and AI</li>
-                <li>Computer vision</li>
-              </ul>
-            </details>
-          </div>
+      <div class="orderplacementexperience">
+        <div class="simple-links"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <h3>Chalmers University of Technology, Gothenburg, Sweden</h3>
+          <h3>August 2023 - August 2025</h3>
         </div>
+        <h3>Master of Science in Computer Systems and Networks</h3>
+        <!-- Collapsible Courses -->
+        <details>
+          <summary>Courses Taken</summary>
+          <ul>
+            <li>Operating systems</li>
+            <li>Computer networks</li>
+            <li>Distributed systems</li>
+            <li>Cryptography</li>
+            <li>Computer security</li>
+            <li>Real time systems</li>
+            <li>Language-based security</li>
+            <li>Network security</li>
+            <li>Data-driven support for cyber-physical systems</li>
+            <li>Technical writing in Computer Systems and Networks</li>
+            <li>Introduction to data science and AI</li>
+            <li>Computer vision</li>
+          </ul>
+        </details>
       </div>
 
       <!-- nitm  -->
-      <div class="timeline-item">
-        <div class="timeline-left">August 2014 - May 2018</div>
-        <div class="timeline-right">
-          <div class="experience-block">
-            <h3>Bachelor of Technology in Electrical and Electronics Engineering - National Institute of Technology
-              Meghalaya, Shillong, India</h3>
-
-            <details>
-              <summary>Courses Taken</summary>
-              <ul>
-                <li>Engineering Mechanics</li>
-                <li>Basic Electrical Engineering</li>
-                <li>Engineering Drawing</li>
-                <li>English Language Skills</li>
-                <li>Engineering Chemistry</li>
-                <li>Mathematics-1</li>
-                <li>Basic Electronics</li>
-                <li>Computer Programming</li>
-                <li>Engineering Physics</li>
-                <li>Engineering Thermodynamics</li>
-                <li>Environmental Science</li>
-                <li>Mathematics-2</li>
-                <li>Workshop Practice</li>
-
-                <li>Data Structures & Algorithms</li>
-                <li>Physics Of Materials</li>
-                <li>Mathematics-3</li>
-                <li>Electronic Devices And Circuits</li>
-                <li>Digital Logic Design</li>
-                <li>Network Analysis</li>
-
-                <li>Computer Organization & Architecture</li>
-                <li>Electrical Machines-1</li>
-                <li>Mathematics Laboratory</li>
-                <li>Measurement & Instrumentation</li>
-                <li>Scientific Computing</li>
-                <li>Transmission & Distribution</li>
-
-                <li>Foundations Of Management</li>
-                <li>Microprocessors And Interfacing</li>
-                <li>Electrical Machines 2</li>
-                <li>Control Systems</li>
-                <li>Power System Analysis</li>
-                <li>Analog Electronics</li>
-
-                <li>Accounting And Financial Method</li>
-                <li>Electromagnetic Theory</li>
-                <li>Embedded Systems</li>
-                <li>Power Electronics</li>
-                <li>Protection & Switchgear</li>
-                <li>Signals And Systems</li>
-
-                <li>Digital Signal Processing</li>
-                <li>High Voltage Engineering</li>
-                <li>Introduction to Economics</li>
-                <li>Power System Operations And Control</li>
-                <li>Professional Ethics</li>
-
-                <li>Advanced Control System</li>
-                <li>Electrical Drives & Control</li>
-                <li>Power Quality</li>
-              </ul>
-            </details>
-
-          </div>
+      <div class="orderplacementexperience">
+        <div class="simple-links"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <h3>National Institute of Technology Meghalaya, Shillong, India</h3>
+          <h3>August 2014 - May 2018</h3>
         </div>
+        <h3>Bachelor of Technology in Electrical and Electronics Engineering</h3>
+        <details>
+          <summary>Courses Taken</summary>
+          <ul>
+            <li>Engineering Mechanics</li>
+            <li>Basic Electrical Engineering</li>
+            <li>Engineering Drawing</li>
+            <li>English Language Skills</li>
+            <li>Engineering Chemistry</li>
+            <li>Mathematics-1</li>
+            <li>Basic Electronics</li>
+            <li>Computer Programming</li>
+            <li>Engineering Physics</li>
+            <li>Engineering Thermodynamics</li>
+            <li>Environmental Science</li>
+            <li>Mathematics-2</li>
+            <li>Workshop Practice</li>
+
+            <li>Data Structures & Algorithms</li>
+            <li>Physics Of Materials</li>
+            <li>Mathematics-3</li>
+            <li>Electronic Devices And Circuits</li>
+            <li>Digital Logic Design</li>
+            <li>Network Analysis</li>
+
+            <li>Computer Organization & Architecture</li>
+            <li>Electrical Machines-1</li>
+            <li>Mathematics Laboratory</li>
+            <li>Measurement & Instrumentation</li>
+            <li>Scientific Computing</li>
+            <li>Transmission & Distribution</li>
+
+            <li>Foundations Of Management</li>
+            <li>Microprocessors And Interfacing</li>
+            <li>Electrical Machines 2</li>
+            <li>Control Systems</li>
+            <li>Power System Analysis</li>
+            <li>Analog Electronics</li>
+
+            <li>Accounting And Financial Method</li>
+            <li>Electromagnetic Theory</li>
+            <li>Embedded Systems</li>
+            <li>Power Electronics</li>
+            <li>Protection & Switchgear</li>
+            <li>Signals And Systems</li>
+
+            <li>Digital Signal Processing</li>
+            <li>High Voltage Engineering</li>
+            <li>Introduction to Economics</li>
+            <li>Power System Operations And Control</li>
+            <li>Professional Ethics</li>
+
+            <li>Advanced Control System</li>
+            <li>Electrical Drives & Control</li>
+            <li>Power Quality</li>
+          </ul>
+        </details>
       </div>
     </div>
   </section>

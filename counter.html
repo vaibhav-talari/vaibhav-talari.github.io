@@ -1,50 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Click Counter</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #04AA6D;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      margin: 0 10px;
+      /* spacing between buttons */
+    }
+
+    .button:active {
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      /* stack vertically */
+      justify-content: center;
+      /* center horizontally */
+      align-items: center;
+      /* center vertically */
+      height: 100vh;
+      /* full viewport height */
+      border: 3px solid green;
+      gap: 100px;
+      /* modern way to add space between flex items */
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="center">
-  <!-- Increment button -->
-  <button class="button" onclick="incrementCounter()">Increment</button>
+  <div class="center">
+    <!-- Increment button -->
+    <button class="button" onclick="incrementCounter()">Increment</button>
 
-  <!-- Counter display -->
-  <p id="counterText">You clicked <span id="count">0</span> times.</p>
+    <!-- Counter display -->
+    <p id="counterText">You clicked <span id="count">0</span> times.</p>
 
-  <!-- Reset button -->
-  <button class="button" onclick="resetCounter()">Reset</button>
+    <!-- Reset button -->
+    <button class="button" onclick="resetCounter()">Reset</button>
 
-  <!-- Decrement button -->
-  <button class="button" onclick="decrementCounter()">Decrement</button>
-</div>
+    <!-- Decrement button -->
+    <button class="button" onclick="decrementCounter()">Decrement</button>
+  </div>
 
-<script>
-  // Load saved count or default to 0
-  let count = parseInt(localStorage.getItem("clicks")) || 0;
-  document.getElementById("count").innerText = count;
-
-  function incrementCounter() {
-    count++;
-    localStorage.setItem("clicks", count);
+  <script>
+    // Load saved count or default to 0
+    let count = parseInt(localStorage.getItem("clicks")) || 0;
     document.getElementById("count").innerText = count;
-  }
 
-  function decrementCounter() {
-    if (count != 0) {
-    count--;
-    localStorage.setItem("clicks", count);
-    document.getElementById("count").innerText = count;
+    function incrementCounter() {
+      count++;
+      localStorage.setItem("clicks", count);
+      document.getElementById("count").innerText = count;
     }
-  }
 
-  function resetCounter() {
-    count = 0;
-    localStorage.setItem("clicks", count);
-    document.getElementById("count").innerText = count;
-  }
-</script>
+    function decrementCounter() {
+      if (count != 0) {
+        count--;
+        localStorage.setItem("clicks", count);
+        document.getElementById("count").innerText = count;
+      }
+    }
+
+    function resetCounter() {
+      count = 0;
+      localStorage.setItem("clicks", count);
+      document.getElementById("count").innerText = count;
+    }
+  </script>
 
 </body>
+
 </html>

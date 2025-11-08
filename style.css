@@ -5,12 +5,26 @@
   font-family: Arial, sans-serif;
 }
 
-body {
-  line-height: 1.6;
-  color: hsl(0, 0%, 100%);
-  background: #000719;
+/*header navigation*/
+header {
+  background: #000000;
+  color: #ffffff;
+  padding: 1rem 2rem;
 }
 
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/*header drop down menu configuration*/
 .dropdown {
   position: relative;
   display: inline-block;
@@ -40,35 +54,12 @@ body {
   display: block;
 }
 
-header {
-  background: #000000;
-  color: #ffffff;
-  padding: 1rem 2rem;
-  background-size: cover;
+/*common html tag config*/
+body {
+  line-height: 1.6;
+  color: hsl(0, 0%, 100%);
+  background: #000719;
 }
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-}
-
-section {
-  padding: 2rem;
-  max-width: fit-content;
-  margin: auto;
- }
 
 h1 {
   text-align: center;
@@ -76,147 +67,137 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 1rem;
-  color: #ffffff;
-}
-
-.project {
-  background: #fff;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer {
   text-align: center;
-  padding: 1rem;
-  background: #222;
-  color: #fff;
-  margin-top: 2rem;
 }
 
-.button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  margin: 0 10px;
-  /* spacing between buttons */
-}
-
-.button:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
-  /* stack vertically */
-  justify-content: center;
-  /* center horizontally */
-  align-items: center;
-  /* center vertically */
-  height: 100vh;
-  /* full viewport height */
-  border: 3px solid green;
-  gap: 100px;
-  /* modern way to add space between flex items */
-}
-
-.center2 {
-  display: flex;
-  justify-content: center;
-  /* center horizontally */
-  align-items: center;
-  /* center vertically */
-  height: 100vh;
-  /* full viewport height */
-  border: 3px solid green;
-  gap: 100px;
-  /* modern way to add space between flex items */
-}
-
-#about,
-#experience,
-#projects,
-#education {
+section {
   max-width: fit-content;
   margin: 0 auto;
   padding: 2rem;
   font-family: Arial, sans-serif;
 }
 
-#about h2,
-#experience h2,
-#projects h2,
-#education h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+a {
+  display: inline-block;
+  /* allows text-align to work */
+  text-decoration: none;
+  /* Removes the underline */
+  color: #0077ff;
+  /* Modern blue color */
+  font-weight: 500;
+  /* Slightly bold for clarity */
+  position: relative;
+  /* Needed for pseudo-element hover effect */
+  transition: color 0.3s ease;
+  /* Smooth color change */
 }
 
-.timeline-left {
-  flex: 0 0 100px;
-  text-align: right;
-  font-weight: bold;
-  color: #ffffff;
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #0077ff;
+  transition: width 0.3s ease;
 }
 
-
-.timeline-right {
-  flex: 1;
+a:hover {
+  color: #0056cc;
+  /* Darken on hover */
 }
 
-.project-block {
-  background: #181818;
+a:hover::after {
+  width: 100%;
+  /* Underline animation on hover */
+}
+
+/*------------*/
+/* place cards*/
+.placecardproject {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.orderplacement {
+  display: flex;
+  /* make the card a flex container */
+  flex-direction: column;
+  /* stack children vertically */
+  justify-content: flex-start;
+  /* normal top-down flow */
+  width: 300px;
+  height: 320px;
   border-radius: 8px;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.7);
-  margin-top: 1.5rem; /* adds space before each block */
-}
-
-
-.experience-block {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
   background: #181818;
-  border-radius: 8px;
   padding: 1rem 1.5rem;
-  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.7);
+  margin-top: 1.5rem;
+  /* adds space before each block */
+}
+
+.simple-links {
+  margin-top: auto;
+  /* occupies remaining space and sits at bottom */
+}
+
+.placecardexperience {
+  display: flex;
+  /* Use flex for natural layout */
+  flex-direction: column;
+  /* Stack experience entries vertically */
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  /* Take full available width */
+  box-sizing: border-box;
+}
+
+.orderplacementexperience {
+  display: flex;
+  /* make the card a flex container */
+  flex-direction: column;
+  /* stack children vertically */
+  justify-content: flex-start;
+  /* normal top-down flow */
+  /*if display is grid then the text length becomes the size when width is auto*/
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background: #181818;
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  /* adds space before each block */
+}
+
+.edu {
+  width: 100%;
+  max-width: 75rem;
+  min-width: 75rem;
+  /* = 1200px, your original width */
+  margin: 0 auto;
+  /* centers it horizontally */
+  padding: 0 1rem;
+  /* adds side padding on small screens */
+  box-sizing: border-box;
+  /* ensures padding doesn’t increase width */
 }
 
 
-.experience-block h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  color: #333;
+.orderplacement:hover {
+  transform: scale(1.05);
 }
 
+/*------------*/
 
-details {
-  margin-top: 0.5rem;
-  cursor: pointer;
-}
-
-
-details summary {
-  font-weight: bold;
-  color: #0077cc;
-  margin-bottom: 0.5rem;
-}
-
-
-details[open] summary {
-  margin-bottom: 0.5rem;
-}
-
-
+/*skills div block and images*/
 .skills {
   display: flex;
   justify-content: center;

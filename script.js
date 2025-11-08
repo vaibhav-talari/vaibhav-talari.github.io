@@ -26,7 +26,7 @@ function startTypewriter(txtContent, eleName) {
     typeWriter();
 }
 
-let header = document.querySelector(".headerGradiant");
+/*let header = document.querySelector(".headerGradiant");
 
 header.addEventListener("mousemove", function (e) {
     const rect = header.getBoundingClientRect();
@@ -43,4 +43,4 @@ header.addEventListener("mousemove", function (e) {
         rgb(${r}, ${g}, ${b}), 
         #000)
       `;
-});
+});*/
